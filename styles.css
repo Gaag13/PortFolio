@@ -188,3 +188,70 @@ footer {
     background-color: #1EBE5D;
     transform: scale(1.1);
 }
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Header más compacto en móviles */
+    #header {
+        padding: 10px;
+        height: auto;
+    }
+
+    #header h1 {
+        font-size: 22px;
+    }
+
+    /* Menú de navegación más accesible */
+    .nav-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        padding: 10px;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Ajuste de secciones para evitar espacios grandes */
+    section {
+        padding: 50px 5%;
+    }
+
+    /* Botón flotante de WhatsApp más pequeño */
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* Evita que las imágenes sean demasiado grandes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajuste de los títulos */
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Ajuste en las columnas de servicios */
+    .col-md-4, .col-lg-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
