@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Giancarlo Arciniegas| Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <!-- Estilos de Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
+
+    <!-- Barra de Navegación -->
     <header>
-        <h1>Giancarlo Arciniegas Gutierrez</h1>
+        <div class="logo">GA</div>
         <nav>
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
@@ -18,60 +24,134 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Sección de Presentación -->
+    <section id="hero">
+        <h1>Hola, soy <span>Giancarlo Andrey Arciniegas Gutierrez</span></h1>
+        <p>Ingeniero Civil | Especialista en BIM | Programador BIM | Desarrollador Web</p>
+    </section>
+
     <section id="about">
         <h2>Sobre Mí</h2>
         <p>
-            Soy un <strong>Ingeniero Civil</strong> con 3 años de experiencia en <strong>modelado BIM</strong> en todas las disciplinas. 
-            Además, soy <strong>desarrollador BIM</strong> especializado en <em>Revit API Development</em>. 
-            También soy <strong>programador web</strong> con conocimientos en diversas tecnologías.
+            Soy <strong>Giancarlo Andrey Arciniegas Gutiérrez</strong>, Ingeniero Civil con un fuerte enfoque en tecnología, modelado BIM y desarrollo de software. 
+            Me destaco por mi <strong>liderazgo, trabajo en equipo</strong> y capacidad para afrontar nuevos retos.
         </p>
-    </section>    
+        <p>
+            Actualmente me desempeño como <strong>BIM API Developer</strong>, desarrollando complementos personalizados en <strong>C# y Revit API</strong> para optimizar flujos de trabajo y automatizar procesos en la industria AEC. 
+            Además, cuento con experiencia en <strong>modelado estructural BIM</strong> bajo estándares internacionales.
+        </p>
+        <p>
+            También poseo habilidades en <strong>desarrollo web</strong>, integrando tecnologías como <strong>HTML, CSS, JavaScript, React y Node.js</strong>, junto con conocimientos en bases de datos <strong>SQL Server</strong> y control de versiones con <strong>Git y GitHub</strong>.
+        </p>
+    </section>
+    
+    <!-- Sección de Habilidades -->
     <section id="skills">
         <h2>Habilidades</h2>
-        <ul>
-            <li>Modelado BIM en todas las disciplinas</li>
-            <li>Desarrollo con Revit API (BIM Programming)</li>
-            <li>Desarrollo Web (Frontend & Backend)</li>
-            <li>Lenguajes de Programación:
-                <ul>
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                    <li>HTML & CSS</li>
-                </ul>
-            </li>
-        </ul>
-    </section>    
+        <div class="skills-container">
+            <span>Modelado BIM</span>
+            <span>Revit API</span>
+            <span>Python</span>
+            <span>C#</span>
+            <span>JavaScript</span>
+            <span>HTML & CSS</span>
+        </div>
+    </section>
+
     <section id="projects">
-        <h2>Proyectos Destacados</h2>
-    
-        <div class="project">
-            <h3>Automatización BIM con Revit API</h3>
-            <p>Desarrollo de herramientas personalizadas en C# para automatizar tareas en Revit.</p>
-        </div>
-    
-        <div class="project">
-            <h3>Plataforma Web para Gestión BIM</h3>
-            <p>Creación de una plataforma con HTML, CSS y JavaScript para administrar modelos BIM en la nube.</p>
-        </div>
-    
-        <div class="project">
-            <h3>Scripts en Python para Análisis Estructural</h3>
-            <p>Automatización de procesos de cálculo y análisis estructural utilizando Python.</p>
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Automatización BIM</h3>
+                <p>Desarrollo de herramientas en C# para Revit.</p>
+            </div>
+            <div class="project">
+                <h3>Gestión BIM en la Nube</h3>
+                <p>Plataforma web con HTML, CSS y JS.</p>
+            </div>
+            <div class="project">
+                <h3>Análisis Estructural con Python</h3>
+                <p>Scripts de optimización y automatización.</p>
+            </div>
+            
+            <!-- Swiper para Modelación BIM -->
+            <div class="project">
+                <h3>Modelación BIM</h3>
+                <p>Modelacion en las diferentes especialidades, estructura,arquitectura,MEP, etc</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Imágenes -->
+                        <div class="swiper-slide">
+                            <img src="img/img1.jpg" alt="Modelación BIM 1" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img2.jpg" alt="Modelación BIM 2" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img3.jpg" alt="Modelación BIM 3" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img4.jpg" alt="Modelación BIM 4" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img5.jpg" alt="Modelación BIM 5" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img6.jpg" alt="Modelación BIM 6" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img7.jpg" alt="Modelación BIM 7" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img8.jpg" alt="Modelación BIM 8" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img9.jpg" alt="Modelación BIM 9" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img10.jpg" alt="Modelación BIM 10" class="zoom-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img11.jpg" alt="Modelación BIM 11" class="zoom-image">
+                        </div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </section>
     
+
+    <!-- Sección de Contacto -->
     <section id="contact">
         <h2>Contacto</h2>
-        <p>Correo electrónico: <a href="mailto:giancarloarciniegas@gmail.com">giancarloarciniegas@gmail.com</a></p>
+        <p>Email: <a href="mailto:giancarloarciniegas@gmail.com">giancarloarciniegas@gmail.com</a></p>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Giancarlo Arciniegas. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Botón de WhatsApp -->
     <a href="https://api.whatsapp.com/send?phone=+573027508209&text=¡Hola! Me gustaría obtener más información." 
     class="whatsapp-button" 
     target="_blank">
-    <img src="img/wp.png" alt="WhatsApp" class="whatsapp-icon">
-    </a>
+    <img src="img/wp.png" alt="WhatsApp">
+</a>
+<!-- Script de Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- Tu script -->
+<script src="script.js"></script>
+<!-- Contenedor de imagen en pantalla completa -->
+<div id="fullscreen-container">
+    <img id="fullscreen-image" src="" alt="Imagen ampliada">
+</div>
+
+
 </body>
 </html>
