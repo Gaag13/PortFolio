@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // --- CARRUSEL PRINCIPAL ---
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         autoplay: {
-            delay: 2500, // 2.5 segundos por imagen
+            delay: 2500,
             disableOnInteraction: false,
         },
         navigation: {
@@ -17,45 +18,64 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    // --- IMAGEN EN PANTALLA COMPLETA ---
+    // --- PANTALLA COMPLETA ---
     let images = document.querySelectorAll(".swiper-slide img");
     let fullscreenContainer = document.getElementById("fullscreen-container");
-    let fullscreenImage = document.getElementById("fullscreen-image");
-    let imageIndex = 0;
-    let fullscreenImages = Array.from(images);
-    let fullscreenInterval;
+    let closeFullscreen = document.querySelector(".close-fullscreen");
+    let fullscreenSwiper;
 
-    // Función para mostrar imagen en pantalla completa
-    function showFullscreenImage(index) {
-        fullscreenImage.src = fullscreenImages[index].src;
-        fullscreenContainer.classList.add("active");
-    }
-
-    // Evento click en cada imagen del swiper
+    // Mostrar imágenes en pantalla completa
     images.forEach((img, index) => {
         img.addEventListener("click", function () {
-            imageIndex = index; // Guarda el índice de la imagen actual
-            showFullscreenImage(imageIndex);
+            fullscreenContainer.classList.add("active");
 
-            // Iniciar el pase automático de imágenes en pantalla completa
-            fullscreenInterval = setInterval(() => {
-                imageIndex = (imageIndex + 1) % fullscreenImages.length; // Avanzar imagen
-                showFullscreenImage(imageIndex);
-            }, 2500); // Cambia cada 2.5 segundos
+            if (!fullscreenSwiper) {
+                fullscreenSwiper = new Swiper(".fullscreen-swiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    loop: true,                    
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            }
+
+            fullscreenSwiper.slideTo(index);
         });
     });
 
-    // Cerrar la imagen en pantalla completa
-    fullscreenContainer.addEventListener("click", function () {
+    // Cerrar pantalla completa
+    closeFullscreen.addEventListener("click", function () {
         fullscreenContainer.classList.remove("active");
-        clearInterval(fullscreenInterval); // Detener pase automático al cerrar
     });
 
     // Cerrar con tecla ESC
     document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") {
             fullscreenContainer.classList.remove("active");
-            clearInterval(fullscreenInterval);
         }
     });
+    document.addEventListener("contextmenu", function (event) {
+        event.preventDefault(); // Bloquea el menú del clic derecho
+    });
+    
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (event) {
+            event.preventDefault(); // Evita el salto brusco
+            const targetId = this.getAttribute('href'); // Obtiene el ID de la sección destino
+            const targetSection = document.querySelector(targetId);
+            
+            window.scrollTo({
+                top: targetSection.offsetTop - 60, // Ajusta la posición para que no tape el menú
+                behavior: 'smooth' // Activa el scroll suave
+            });
+        });
+    });
+    
+    
 });
