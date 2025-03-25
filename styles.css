@@ -5,13 +5,6 @@
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
 }
-
-body {
-    background: #121212;
-    color: white;
-    text-align: center;
-}
-
 /* Barra de Navegación */
 header {
     background: #1e1e1e;
@@ -24,7 +17,19 @@ header {
     top: 0;
     z-index: 1000;
 }
-
+/* Estilos para los enlaces dentro de los párrafos */
+p a {
+    color: #25D366; /* Verde WhatsApp */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Resaltar el enlace */
+    transition: color 0.3s ease-in-out;
+}
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -221,12 +226,6 @@ footer {
     object-fit: contain;
     display: block;
     margin: 0 auto;
-}
-body {
-    background-color: #121212;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
 }
 
 .swiper {
