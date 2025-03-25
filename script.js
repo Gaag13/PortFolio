@@ -35,6 +35,40 @@ document.addEventListener("DOMContentLoaded", function () {
             clickable: true,
         },
     });
+    var   automationSwiper = new Swiper(".automationSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+    var   cloudSwiper = new Swiper(".cloudSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 
     // --- PANTALLA COMPLETA ---
     let fullscreenContainer = document.getElementById("fullscreen-container");
@@ -59,6 +93,12 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (currentSwiper.classList.contains("bimSwiper")) {
                 bimSwiper.autoplay.stop();
                 activeSwiper = bimSwiper;
+            } else if (currentSwiper.classList.contains("automationSwiper")) {
+                automationSwiper.autoplay.stop();
+                activeSwiper = automationSwiper;
+            } else if (currentSwiper.classList.contains("cloudSwiper")) {
+                cloudSwiper.autoplay.stop();
+                activeSwiper = cloudSwiper;
             }
 
             // Agregar imágenes al Swiper de pantalla completa
