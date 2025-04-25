@@ -162,9 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Bloquear clic derecho
-    document.addEventListener("contextmenu", function (event) {
-        event.preventDefault();
-    });
+    //document.addEventListener("contextmenu", function (event) {
+    //    event.preventDefault();
+   // });
 
     // Scroll suave al hacer clic en el menú
     document.querySelectorAll('nav a').forEach(anchor => {
