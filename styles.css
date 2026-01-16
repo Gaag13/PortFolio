@@ -155,6 +155,7 @@ footer {
     font-size: 18px; /* Tamaño de fuente */
 }
 
+
 #about h2 {
     text-align: center; /* Centrar el título */
     margin-bottom: 15px;
@@ -162,6 +163,19 @@ footer {
 
 #about p {
     margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+#courses {
+    text-align: justify; 
+    max-width: 800px; /* Limitar el ancho del texto */
+    margin: 0 auto; /* Centrar la sección */
+    line-height: 1.6; /* Espaciado entre líneas */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+#courses h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 15px;
 }
 .swiper {
     width: 100%;
@@ -284,5 +298,19 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+.youtube-playlist {
+  width: 90vw;
+  max-width: 500px;
+  margin: 50px auto;
+  aspect-ratio: 16 / 9;
+}
+
+.youtube-playlist iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.6);
+}
+
 
 
