@@ -1,249 +1,690 @@
 <!DOCTYPE html>
 <html lang="es">  
 <head>
+    <!-- Meta Tags Esenciales -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio de Giancarlo Arciniegas, Ingeniero Civil especializado en BIM y desarrollo web." />
-    <meta property="og:title" content="Portafolio de Giancarlo Arciniegas" />
-    <meta property="og:description" content="Ingeniero Civil y BIM Developer con experiencia en automatización y desarrollo web." />
-    <meta property="og:image" content="ruta/a/tu/imagen.jpg" />
-    <meta property="og:url" content="https://gaag13.github.io/PortFolio/" />
-    <title>Giancarlo Arciniegas| Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Giancarlo Arciniegas | Ingeniero Civil BIM & Desarrollador Full Stack</title>
+    <meta name="description" content="Ingeniero Civil especializado en automatización BIM, desarrollo de software y soluciones tecnológicas para proyectos AEC. Experto en Revit API, C#, Python y desarrollo web.">
+    <meta name="keywords" content="BIM, Revit API, C#, Python, Ingeniero Civil, Desarrollo Web, Automatización, ISO 19650, React, Node.js">
+    <meta name="author" content="Giancarlo Andrey Arciniegas Gutierrez">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gaag13.github.io/PortFolio/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gaag13.github.io/PortFolio/">
+    <meta property="og:title" content="Giancarlo Arciniegas | Ingeniero Civil BIM & Desarrollador Full Stack">
+    <meta property="og:description" content="Transformo procesos AEC con soluciones tecnológicas integrales. Automatización BIM, desarrollo web y software estratégico.">
+    <meta property="og:image" content="https://gaag13.github.io/PortFolio/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gaag13.github.io/PortFolio/">
+    <meta name="twitter:title" content="Giancarlo Arciniegas | Ingeniero Civil BIM & Desarrollador">
+    <meta name="twitter:description" content="Automatización BIM, desarrollo web y soluciones tecnológicas para proyectos AEC.">
+    <meta name="twitter:image" content="https://gaag13.github.io/PortFolio/img/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    
+    <!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Preload recursos críticos -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="img/LOGOFINAL.png" as="image">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <!-- Estilos de Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Schema.org Markup para SEO mejorado -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Giancarlo Andrey Arciniegas Gutierrez",
+      "jobTitle": "Ingeniero Civil BIM & Desarrollador Full Stack",
+      "description": "Ingeniero Civil especializado en automatización BIM y desarrollo de software estratégico",
+      "url": "https://gaag13.github.io/PortFolio/",
+      "email": "warbimpro@gmail.com",
+      "telephone": "+573027508209",
+      "sameAs": [
+        "https://github.com/Gaag13",
+        "https://www.youtube.com/@warbimpro"
+      ],
+      "knowsAbout": [
+        "BIM", 
+        "Revit API", 
+        "C#", 
+        "Python", 
+        "JavaScript", 
+        "React", 
+        "Node.js",
+        "ISO 19650",
+        "Análisis Estructural"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad del Cauca"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M87R8WP5G0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M87R8WP5G0');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M87R8WP5G0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-M87R8WP5G0');
-</script>
 <body>
+    <!-- Skip to main content para accesibilidad -->
+    <a href="#main-content" class="skip-to-main">Saltar al contenido principal</a>
 
     <!-- Barra de Navegación -->
-    <header>
-        <div class="logo"><img src="img/LOGOFINAL.png" alt="logo Empresarial"></div>
-        <nav>
+    <header role="banner">
+        <div class="logo">
+            <img src="img/LOGOFINAL.png" alt="Logo Giancarlo Arciniegas - Ingeniero Civil BIM" width="150" height="50">
+        </div>
+        <nav role="navigation" aria-label="Navegación principal">
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#courses">Cursos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
+        <!-- Botón de menú móvil -->
+        <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
-    <!-- Sección de Presentación -->
-    <section id="hero">
-        <h1>Hola, soy <span>Giancarlo Andrey Arciniegas Gutierrez</span></h1>
-        <p>Ingeniero Civil | Especialista en BIM | Programador BIM | Desarrollador Web</p>
-    </section>
-
-    <section id="about">
-        <h2>Transformo Procesos AEC con Soluciones Tecnológicas Integrales</h2>
-        <p>
-            Soy <strong>Giancarlo Arciniegas Gutiérrez</strong>, Ingeniero Civil especializado en <strong>automatización BIM y desarrollo de software estratégico</strong>. 
-            Combino mi expertise técnico con <strong>liderazgo orientado a resultados</strong> para implementar sistemas que aumentan la productividad en proyectos de construcción.
-        </p>
-    
-        <p>
-            Como <strong>Desarrollador BIM</strong>, diseño <em>herramientas personalizadas con C# y Revit API</em> que:<br>
-            ✔ Reducen un 40% el tiempo en generación de documentación técnica<br>
-            ✔ Eliminan errores de coordinación interdisciplinaria<br>
-            ✔ Automatizan flujos de trabajo bajo estándares <strong>ISO 19650</strong>
-        </p>
-    
-        <p>
-            Mi enfoque <strong>Full Stack para la construcción 4.0</strong> integra:<br>
-            • <strong>Plataformas BIM</strong>: Modelado estructural avanzado y gestión colaborativa<br>
-            • <strong>Desarrollo Web</strong>: Aplicaciones React/Node.js conectadas a modelos BIM<br>
-            • <strong>Infraestructura Digital</strong>: Bases de datos SQL y sistemas de control de versiones Git
-        </p>
-    
-        <p>
-            <strong>¿Resultado?</strong> Proyectos ejecutados con precisión milimétrica, equipos coordinados en tiempo real, 
-            y decisiones técnicas basadas en data unificada.
-    </section>
-    
-    <!-- Sección de Habilidades -->
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <div class="skills-container">
-            <span>Modelado BIM</span>
-            <span>Revit API</span>
-            <span>Python</span>
-            <span>C#</span>
-            <span>JavaScript</span>
-            <span>HTML & CSS</span>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>Automatización BIM</h3>
-                <p>
-                    <a href="https://www.youtube.com/watch?v=DCTLA_O4dd8&ab_channel=WARBIMPRO" target="_blank">Addin Cantidades </a>
+    <!-- Contenido Principal -->
+    <main id="main-content">
+        <!-- Sección Hero -->
+        <section id="hero" class="hero-section" role="region" aria-label="Presentación">
+            <div class="hero-content">
+                <h1>
+                    Hola, soy <span class="highlight">Giancarlo Andrey Arciniegas Gutierrez</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Ingeniero Civil | Especialista en BIM | Programador BIM | Desarrollador Web
                 </p>
-                <div class="swiper automationSwiper">
-                    <div class="swiper-wrapper">
-                        <!-- Imágenes -->
-                        <div class="swiper-slide"><img src="img/wall01.png" alt="Imagen del Addin 1" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/wall02.png" alt="Imagen del Addin 2" class="zoom-image"></div>                        
-                    </div>                            
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>    
-            </div>            
-            <div class="project">
-                <h3>Análisis Estructural con Python</h3> 
-                <p>
-                    <a href="https://github.com/Gaag13/An-lisis-Estructural/tree/main" target="_blank">Scripts de optimización y automatización. </a>
-                </p>              
-                <div class="swiper analysisSwiper">
-                    <div class="swiper-wrapper">
-                        <!-- Imágenes -->
-                        <div class="swiper-slide"><img src="img/PA1.jpg" alt="Analisis matricial 1" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA2.jpg" alt="Analisis matricial 2" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA3.jpg" alt="Analisis matricial 3" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA4.jpg" alt="Analisis matricial 4" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA5.jpg" alt="Analisis matricial 5" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA6.jpg" alt="Analisis matricial 6" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA7.jpg" alt="Analisis matricial 7" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA8.jpg" alt="Analisis matricial 8" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA9.jpg" alt="Analisis matricial 9" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA10.jpg" alt="Analisis matricial 10" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA11.jpg" alt="Analisis matricial 11" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA12.jpg" alt="Analisis matricial 12" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA13.jpg" alt="Analisis matricial 13" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA14.jpg" alt="Analisis matricial 14" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/PA15.jpg" alt="Analisis matricial 15" class="zoom-image"> </div>
-                    </div>                            
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>    
-            </div>            
-            <!-- Swiper para Modelación BIM -->
-            <div class="project">
-                <h3>Modelación BIM</h3>
-                <p>Modelacion en las diferentes especialidades, estructura,arquitectura,MEP, Modelado en Sitio, etc</p>
-                <div class="swiper bimSwiper">
-                    <div class="swiper-wrapper">
-                        <!-- Imágenes -->
-                        <div class="swiper-slide"><img src="img/AQR1.jpg" alt="modelado BIM" class="zoom-image"></div> 
-                        <div class="swiper-slide"><img src="img/AQR2.jpg" alt="modelado BIM" class="zoom-image"></div> 
-                        <div class="swiper-slide"><img src="img/AQR3.jpg" alt="modelado BIM" class="zoom-image"></div> 
-                        <div class="swiper-slide"><img src="img/AQR4.jpg" alt="modelado BIM" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/AQR5.jpg" alt="modelado BIM" class="zoom-image"></div> 
-                        <div class="swiper-slide"><img src="img/AQR6.jpg" alt="modelado BIM" class="zoom-image"></div> 
-                        <div class="swiper-slide"><img src="img/AQR6.jpg" alt="modelado BIM" class="zoom-image"></div> 
-                        <div class="swiper-slide"><img src="img/AQR7.jpg" alt="modelado BIM" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/AQR8.jpg" alt="modelado BIM" class="zoom-image"></div>    
-                        <div class="swiper-slide"><img src="img/AQR9.jpg" alt="modelado BIM" class="zoom-image"></div>  
-                        <div class="swiper-slide"><img src="img/AQR10.jpg" alt="modelado BIM" class="zoom-image"></div>  
-                        <div class="swiper-slide"><img src="img/AQR11.jpg" alt="modelado BIM" class="zoom-image"></div>  
-
-                        <div class="swiper-slide"><img src="img/img12.jpg" alt="Modelacion en Sitio" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img1.jpg" alt="Portada Proyecto Yado" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img2.jpg" alt="Planos Ambientados" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img3.jpg" alt="Planos Arquitectonicos" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img4.jpg" alt="Planos Estructurales" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img5.jpg" alt="Planos de refuerzos zapatas" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img6.jpg" alt="Planos de refuerzos vigas" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img7.jpg" alt="Planos de refuerzos vigas 2" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img8.jpg" alt="Plano de columnas class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img9.jpg" alt="Plano de redes hidrosanitarias 1" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img10.jpg" alt="Plano de redes hidrosanitarias 2" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img11.jpg" alt="Esquema electrico" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img13.jpg" alt="Render 3D proyecto yado" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img14.jpg" alt="Render 3D proyecto yado 2" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img15.jpg" alt="Render Sala proyecto yado" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img16.jpg" alt="Render Sala proyecto yado 2" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img17.jpg" alt="Render Cocina proyecto yado 1" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img18.jpg" alt="Render Cocina proyecto yado 2" class="zoom-image"></div>
-                        <div class="swiper-slide"><img src="img/img19.jpg" alt="Render habitacion principal proyecto yado 1 class="zoom-image"></div>
-                       
-                    <!-- Botones de navegación -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>                
-            </div>               
-    </section>
-    <!-- PANTALLA COMPLETA (SOLO UNA VEZ) -->
-    <div id="fullscreen-container">
-        <div class="fullscreen-swiper swiper">
-            <div class="swiper-wrapper">
-                <!-- LAS IMÁGENES SE AGREGARÁN DINÁMICAMENTE CON JAVASCRIPT -->
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Contactar</a>
+                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">40%</span>
+                    <span class="stat-label">Reducción en tiempo de documentación</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Eliminación de errores de coordinación</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">ISO 19650</span>
+                    <span class="stat-label">Cumplimiento de estándares</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="about" class="about-section" role="region" aria-labelledby="about-heading">
+            <h2 id="about-heading">Transformo Procesos AEC con Soluciones Tecnológicas Integrales</h2>
+            
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>
+                        Soy <strong>Giancarlo Arciniegas Gutiérrez</strong>, Ingeniero Civil especializado en 
+                        <strong>automatización BIM y desarrollo de software estratégico</strong>. 
+                        Combino mi expertise técnico con <strong>liderazgo orientado a resultados</strong> 
+                        para implementar sistemas que aumentan la productividad en proyectos de construcción.
+                    </p>
+                </div>
+
+                <div class="about-expertise">
+                    <div class="expertise-card">
+                        <h3>🏗️ Desarrollo BIM</h3>
+                        <p>
+                            Diseño <em>herramientas personalizadas con C# y Revit API</em> que:
+                        </p>
+                        <ul>
+                            <li>Reducen un 40% el tiempo en generación de documentación técnica</li>
+                            <li>Eliminan errores de coordinación interdisciplinaria</li>
+                            <li>Automatizan flujos de trabajo bajo estándares <strong>ISO 19650</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-card">
+                        <h3>💻 Full Stack para Construcción 4.0</h3>
+                        <p>Mi enfoque integra:</p>
+                        <ul>
+                            <li><strong>Plataformas BIM:</strong> Modelado estructural avanzado y gestión colaborativa</li>
+                            <li><strong>Desarrollo Web:</strong> Aplicaciones React/Node.js conectadas a modelos BIM</li>
+                            <li><strong>Infraestructura Digital:</strong> Bases de datos SQL y sistemas Git</li>
+                        </ul>
+                    </div>
+
+                    <div class="expertise-card highlight-card">
+                        <h3>🎯 Resultado</h3>
+                        <p>
+                            Proyectos ejecutados con <strong>precisión milimétrica</strong>, 
+                            equipos coordinados en <strong>tiempo real</strong>, y decisiones técnicas 
+                            basadas en <strong>data unificada</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="skills" class="skills-section" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Habilidades Técnicas</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>BIM & CAD</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Revit API</span>
+                        <span class="skill-tag">Modelado BIM</span>
+                        <span class="skill-tag">ISO 19650</span>
+                        <span class="skill-tag">Dynamo</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programación</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Desarrollo Web</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Ingeniería</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Análisis Estructural</span>
+                        <span class="skill-tag">Diseño Civil</span>
+                        <span class="skill-tag">Gestión de Proyectos</span>
+                        <span class="skill-tag">Coordinación BIM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="projects" class="projects-section" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Proyectos Destacados</h2>
+            
+            <div class="projects-grid">
+                <!-- Proyecto 1: Automatización BIM -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Automatización BIM - Addin Cantidades</h3>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=DCTLA_O4dd8&ab_channel=WARBIMPRO" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="project-link"
+                               aria-label="Ver demo en YouTube del Addin Cantidades">
+                                📺 Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Desarrollo de complemento personalizado para Revit que automatiza la extracción 
+                        y cuantificación de materiales, reduciendo tiempos de cómputo en un 60%.
+                    </p>
+
+                    <div class="project-gallery">
+                        <div class="swiper automationSwiper" role="region" aria-label="Galería de imágenes del Addin Cantidades">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/wall01.png" 
+                                         alt="Interfaz del Addin Cantidades mostrando panel de configuración" 
+                                         class="zoom-image"
+                                         loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/wall02.png" 
+                                         alt="Resultados de cuantificación automática de muros" 
+                                         class="zoom-image"
+                                         loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" aria-label="Siguiente imagen"></div>
+                            <div class="swiper-button-prev" aria-label="Imagen anterior"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Revit API</span>
+                        <span class="tag">Automatización</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2: Análisis Estructural -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Análisis Estructural con Python</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Gaag13/An-lisis-Estructural/tree/main" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="project-link"
+                               aria-label="Ver código en GitHub del proyecto de Análisis Estructural">
+                                💻 Ver Código
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Scripts de optimización para análisis matricial de estructuras, 
+                        cálculo de esfuerzos y deformaciones mediante métodos numéricos avanzados.
+                    </p>
+
+                    <div class="project-gallery">
+                        <div class="swiper analysisSwiper" role="region" aria-label="Galería de resultados de Análisis Estructural">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/PA1.jpg" alt="Matriz de rigidez y análisis de nodos" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA2.jpg" alt="Diagrama de momentos flectores" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA3.jpg" alt="Análisis de desplazamientos nodales" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA4.jpg" alt="Cálculo de esfuerzos cortantes" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA5.jpg" alt="Deformada de la estructura" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA6.jpg" alt="Análisis de cargas distribuidas" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA7.jpg" alt="Matriz de transformación" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA8.jpg" alt="Resultados numéricos del análisis" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA9.jpg" alt="Visualización 3D de la estructura" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA10.jpg" alt="Gráficos de convergencia" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA11.jpg" alt="Análisis de sensibilidad" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA12.jpg" alt="Resultados de optimización" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA13.jpg" alt="Comparación de métodos analíticos" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA14.jpg" alt="Validación de resultados" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/PA15.jpg" alt="Conclusiones del análisis estructural" class="zoom-image" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" aria-label="Siguiente imagen"></div>
+                            <div class="swiper-button-prev" aria-label="Imagen anterior"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Análisis Matricial</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3: Modelación BIM -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Modelación BIM Multidisciplinaria</h3>
+                    </div>
+                    
+                    <p class="project-description">
+                        Desarrollo de modelos BIM integrales abarcando arquitectura, estructura, MEP 
+                        y modelado en sitio. Coordinación interdisciplinaria y generación de documentación técnica.
+                    </p>
+
+                    <div class="project-gallery">
+                        <div class="swiper bimSwiper" role="region" aria-label="Galería de proyectos BIM">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/AQR1.jpg" alt="Modelado arquitectónico - Vista general" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR2.jpg" alt="Modelado estructural - Sistema de columnas" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR3.jpg" alt="Modelado MEP - Redes hidrosanitarias" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR4.jpg" alt="Coordinación BIM - Clash detection" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR5.jpg" alt="Modelo federado - Vista 3D" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR6.jpg" alt="Detalles constructivos en BIM" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR7.jpg" alt="Instalaciones eléctricas - Modelo BIM" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR8.jpg" alt="Modelo As-Built en sitio" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR9.jpg" alt="Planificación 4D - Secuencia constructiva" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR10.jpg" alt="Modelo de cimentaciones" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/AQR11.jpg" alt="Integración estructural-arquitectónico" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img12.jpg" alt="Modelación en sitio - Levantamiento 3D" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img1.jpg" alt="Proyecto Yado - Portada" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img2.jpg" alt="Planos ambientados - Visualización arquitectónica" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img3.jpg" alt="Planos arquitectónicos - Distribución" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img4.jpg" alt="Planos estructurales - Sistema aporticado" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img5.jpg" alt="Detalles de refuerzo - Zapatas" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img6.jpg" alt="Detalles de refuerzo - Vigas" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img7.jpg" alt="Despieces de acero - Vigas" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img8.jpg" alt="Plano de columnas - Detalles estructurales" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img9.jpg" alt="Redes hidrosanitarias - Agua potable" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img10.jpg" alt="Redes hidrosanitarias - Aguas residuales" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img11.jpg" alt="Esquema eléctrico - Distribución de circuitos" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img13.jpg" alt="Render 3D - Vista exterior proyecto Yado" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img14.jpg" alt="Render 3D - Vista nocturna proyecto Yado" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img15.jpg" alt="Render interior - Sala proyecto Yado" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img16.jpg" alt="Render sala - Vista alternativa" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img17.jpg" alt="Render cocina - Diseño moderno" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img18.jpg" alt="Render cocina - Vista detallada" class="zoom-image" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img19.jpg" alt="Render habitación principal - Diseño interior" class="zoom-image" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" aria-label="Siguiente imagen"></div>
+                            <div class="swiper-button-prev" aria-label="Imagen anterior"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag">Revit</span>
+                        <span class="tag">BIM</span>
+                        <span class="tag">Coordinación</span>
+                        <span class="tag">MEP</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contenedor fullscreen para imágenes -->
+        <div id="fullscreen-container" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+            <div class="fullscreen-swiper swiper">
+                <div class="swiper-wrapper">
+                    <!-- Las imágenes se agregarán dinámicamente -->
+                </div>
+                <div class="swiper-button-next" aria-label="Siguiente imagen"></div>
+                <div class="swiper-button-prev" aria-label="Imagen anterior"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <button class="close-fullscreen" aria-label="Cerrar vista ampliada">&times;</button>
         </div>
-        <span class="close-fullscreen">&times;</span>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    
+        <!-- Sección de Cursos -->
+        <section id="courses" class="courses-section" role="region" aria-labelledby="courses-heading">
+            <h2 id="courses-heading">🎓 Formación y Capacitación</h2>
+            
+            <div class="course-card">
+                <div class="course-header">
+                    <h3>Curso: Programación en Revit API</h3>
+                    <span class="course-badge">Disponible en YouTube</span>
+                </div>
+                
+                <p class="course-description">
+                    Aprende a desarrollar <strong>Addins profesionales para Revit</strong> usando C# y buenas prácticas BIM.
+                    Ideal para ingenieros, arquitectos y modeladores que quieren automatizar su trabajo y aumentar su productividad.
+                </p>
 
-    <!-- COURSES -->
-<section id="courses">
-    <h2>🎓 Curso: Programación en Revit API</h2>
+                <div class="course-topics">
+                    <h4>Temario del curso:</h4>
+                    <ul>
+                        <li>Fundamentos de la Revit API</li>
+                        <li>Configuración del entorno de desarrollo en C#</li>
+                        <li>Creación de complementos (Addins) personalizados</li>
+                        <li>Automatización de tareas repetitivas</li>
+                        <li>Integración con bases de datos</li>
+                        <li>Mejores prácticas y patrones de diseño</li>
+                    </ul>
+                </div>
 
-    <p>
-        Aprende a desarrollar <strong>Addins profesionales para Revit</strong> usando C# y buenas prácticas BIM.
-        Ideal para ingenieros, arquitectos y modeladores que quieren automatizar su trabajo.
-    </p>
+                <div class="youtube-embed-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/DCTLA_O4dd8"
+                        title="Curso Programación Revit API - Introducción"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        loading="lazy">
+                    </iframe>
+                </div>
 
-    <!-- Playlist YouTube -->
-    <div class="youtube-playlist">
-  <iframe 
-    src="https://www.youtube.com/embed/DCTLA_O4dd8"
-    title="Curso Programación Revit API"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+                <div class="course-cta">
+                    <a href="https://www.youtube.com/@warbimpro" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-primary"
+                       aria-label="Ver curso completo en YouTube">
+                        Ver Curso Completo en YouTube
+                    </a>
+                </div>
+            </div>
+        </section>
 
-</section>
+        <!-- Sección de Contacto -->
+        <section id="contact" class="contact-section" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contacto Profesional</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        ¿Tienes un proyecto en mente? ¿Necesitas consultoría en BIM o desarrollo de software?
+                        Hablemos sobre cómo puedo ayudarte a transformar tus procesos.
+                    </p>
 
-    <!-- Sección de Contacto -->
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: <a href="mailto:warbimpro@gmail.com">warbimpro@gmail.com</a></p>
-    </section>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email:</strong>
+                                <a href="mailto:warbimpro@gmail.com">warbimpro@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>WhatsApp:</strong>
+                                <a href="https://api.whatsapp.com/send?phone=573027508209&text=Hola%20Giancarlo,%20me%20gustaría%20información%20sobre%20tus%20servicios" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    +57 302 750 8209
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">💻</span>
+                            <div>
+                                <strong>GitHub:</strong>
+                                <a href="https://github.com/Gaag13" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    github.com/Gaag13
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📺</span>
+                            <div>
+                                <strong>YouTube:</strong>
+                                <a href="https://www.youtube.com/@warbimpro" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    @warbimpro
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta-section">
+                    <h3>¿Listo para comenzar?</h3>
+                    <p>Transformemos juntos tus procesos AEC con tecnología de vanguardia.</p>
+                    <a href="https://api.whatsapp.com/send?phone=573027508209&text=Hola%20Giancarlo,%20me%20gustaría%20información%20sobre%20tus%20servicios" 
+                       class="btn btn-primary btn-large"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Giancarlo Arciniegas. Todos los derechos reservados.</p>
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Giancarlo Arciniegas</h4>
+                <p>Ingeniero Civil especializado en BIM y Desarrollo Full Stack</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:warbimpro@gmail.com">warbimpro@gmail.com</a></li>
+                    <li><a href="https://github.com/Gaag13" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.youtube.com/@warbimpro" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Giancarlo Andrey Arciniegas Gutierrez. Todos los derechos reservados.</p>
+            <p class="footer-credits">Desarrollado con pasión por la innovación tecnológica</p>
+        </div>
     </footer>
 
-    <!-- Botón de WhatsApp -->
-    <a href="https://api.whatsapp.com/send?phone=+573027508209&text=¡Hola! Me gustaría obtener más información." 
-    class="whatsapp-button" 
-    target="_blank">
-    <img src="img/wp.png" alt="WhatsApp">
-</a>
-<!-- Script de Swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<!-- Tu script -->
-<script src="script.js"></script>
-<!-- Contenedor de imagen en pantalla completa -->
-<div id="fullscreen-container">
-    <img id="fullscreen-image" src="" alt="Imagen ampliada">
-</div>
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=573027508209&text=Hola%20Giancarlo,%20me%20gustaría%20información%20sobre%20tus%20servicios" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <img src="img/wp.png" alt="" width="60" height="60">
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
